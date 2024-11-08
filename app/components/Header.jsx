@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const [language, setLanguage] = useState("ar");
   const [menuOpen, setMenuOpen] = useState(true);
 
   function checkNavOpenClose() {
@@ -42,7 +43,6 @@ export default function Header() {
           >
             Map
           </a>
-
           <a
             href="/contactUs"
             className={
@@ -71,9 +71,50 @@ export default function Header() {
                 : "header__nav__item__other"
             }
           >
-            Contact Us
+            Contact
           </a>
         </nav>
+        <div className="header__actions">
+          <button
+            type="button"
+            onClick={() => setLanguage(language === "ar" ? "en" : "ar")}
+            className={`${
+              pathname === "/"
+                ? "header__language"
+                : "header__language header__language__other"
+            } ${language === "ar" ? "active" : ""}`}
+          >
+            <div className={`header__language__entry`}>EN</div>
+            <div className={`header__language__entry`}>ع</div>
+          </button>
+
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="header__actions__menu"
+          >
+            {menuOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M4 12h16M4 6h16M4 18h16" />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
     </div>
   );
