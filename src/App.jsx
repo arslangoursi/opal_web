@@ -2,6 +2,7 @@ import "./app.css";
 
 import aminity__back from "./assets/aminity__back.png";
 import amnity_img from "./assets/amnity_img.png";
+import book_img from "./assets/book_img.png";
 import hero_arc from "./assets/hero_arc.png";
 import hero_back from "./assets/hero_back.png";
 import hero_img from "./assets/hero_img.png";
@@ -84,6 +85,24 @@ export default function App() {
               <img src={villa_img} alt="villa" />
             </div>
           </div>
+        </div>
+        <div className="homepage__book">
+          <div className="homepage__book_text">
+            <div className="homepage__book_text__heading">
+              Book Your Villa Today
+            </div>
+            <div className="homepage__book_text__subheading">
+              Don’t miss the chance to live in one of Riyadh most luxurious
+              communities. Contact us for more information and to reserve your
+              villa at Opal Residential Villas. Begin your journey to an
+              extraordinary lifestyle.
+            </div>
+          </div>
+          <img
+            className="homepage__book_img"
+            src={book_img}
+            alt="booking__Image"
+          />
         </div>
       </div>
     </>
