@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "BeausiteFit-Light";
+  src: url("./fonts/BeausiteFit-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer {
+  background: linear-gradient(40deg, #0c1f35 62%, #7698b1 210%);
+  padding: 2em;
+  color: #fff;
+  font-family: BeausiteFit, sans-serif;
+  margin-top: 730px;
+}
+.footer__content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+.footer__content__links {
+  margin-top: 2.5em;
+}
+.footer__content__links__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5em 0;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.footer__content__links__content__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+.footer__content__get {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  width: 100%;
+}
+.footer__content__get__heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: BeausiteFit-Light, sans-serif;
+
+  margin-top: 0.2em;
+  background: linear-gradient(
+    90deg,
+    #7698b1 0%,
+    #fff 40.68%,
+    #fff 38.63%,
+    #fff 65.73%,
+    #fff 28.53%,
+    #7698b1 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer__content__hr__line {
+  width: 100%;
+  height: 1px;
+  background: #ffffff8a;
+  margin: 1em 0;
+}
+.footer__content__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  width: 100%;
+}
+.footer__content__bottom__social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.footer__content__bottom__social__icon {
+  margin: 0 0.5em;
+}
+.footer__content__header__logo {
+  height: auto !important;
+}
+.footer__content__header__address__info {
+  font-family: BeausiteFit-Light, sans-serif;
+}
+.footer__content__header__contact {
+  font-family: BeausiteFit-Light, sans-serif;
+}
+@media (max-width: 1500px) {
+  .footer {
+    margin-top: 650px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .footer__content__get__heading {
+    font-size: 90px !important;
+  }
+}
+@media (max-width: 1350px) {
+  .footer {
+    margin-top: 600px;
+  }
+}
+@media (max-width: 1000px) {
+  .footer__content__get__heading {
+    font-size: 60px !important;
+    text-align: center;
+    text-wrap: nowrap;
+    white-space: nowrap;
+  }
+  .footer {
+    margin-top: 550px;
+  }
+}
+@media (max-width: 980px) {
+  .footer {
+    margin-top: 480px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__content__header {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .footer__content__links__content {
+    justify-content: center;
+  }
+
+  // .footer__content__bottom__logo {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 50%;
+  // }
+  .footer {
+    overflow: hidden !important;
+  }
+  .footer__content__header__logo img {
+    width: 100%;
+  }
+  .footer__content__get__heading {
+    font-size: 50px !important;
+  }
+  .footer {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__content__get__heading {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 400px) {
+  .footer__content__get__heading {
+    font-size: 20px !important;
+  }
+  .footer__content__header__logo {
+    width: 150px !important;
+    height: auto !important;
+  }
+  .footer__content__header__logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .footer__content__bottom__logo img {
+    width: 150px;
+    height: auto !important;
+    object-fit: contain;
+  }
+}
