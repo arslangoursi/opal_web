@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Arboria-Book";
+  src: url("/src/assets/Fonts/Arboria-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: Arboria-Book, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0 auto;
+}
