@@ -139,6 +139,67 @@
   display: flex;
   width: 100%;
 }
+.homepage__villa {
+  display: flex;
+  margin-left: 3em;
+  background-color: #0d1f35;
+  border-radius: 50px 0 0 50px;
+}
+.homepage__villa__info {
+  display: flex;
+  padding: 4em 1em 3em 2em;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.homepage__villa__info__left {
+  display: flex;
+  width: 45%;
+  padding-right: 2em;
+  flex-direction: column;
+  color: #f5f5f5;
+  padding: 1em;
+  gap: 1em;
+}
+
+.homepage__villa__info__left__heading {
+  display: flex;
+  color: #f5f5f5;
+  font-size: 54px;
+  font-family: BeausiteFit-Light, sans-serif;
+}
+.homepage__villa__info__left__subheading {
+  display: flex;
+  color: #f5f5f5;
+}
+.homepage__villa__info__left__btn {
+  display: flex;
+
+  border-radius: 100px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 1.1em 3em;
+  font-size: 18px;
+
+  font-family: BeausiteFit-Light, sans-serif;
+  margin-top: 1em;
+  background-color: #f5f5f5;
+  color: #0d1f35;
+  width: fit-content;
+}
+.homepage__villa__info__left__btn:hover {
+  background-color: transparent;
+  border: 1px solid #f5f5f5;
+  color: #f5f5f5;
+}
+.homepage__villa__info__right {
+  display: flex;
+  width: 55%;
+  padding-left: 2em;
+}
+.homepage__villa__info__right img {
+  width: 100%;
+}
 /* ------------------------------------------------------------------------------- */
 @media (width < 1500px) {
   .homepage__hero {
@@ -169,6 +230,19 @@
     width: 100%;
     padding-left: 0;
   }
+  .homepage__villa__info {
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+  .homepage__villa__info__left {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .homepage__villa__info__right {
+    width: 80%;
+  }
 }
 @media (width < 800px) {
   .homepage__hero {
@@ -177,5 +251,14 @@
   .homepage__hero__img {
     left: 10%;
     object-fit: cover;
+  }
+  .homepage__hero__img {
+    display: none;
+  }
+  .homepage__villa {
+    margin-left: 1.5em;
+  }
+  .homepage__villa__info {
+    padding: 4em 1.5em 3em 1.5em;
   }
 }
