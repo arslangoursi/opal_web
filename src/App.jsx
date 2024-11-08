@@ -5,6 +5,7 @@ import amnity_img from "./assets/amnity_img.png";
 import hero_arc from "./assets/hero_arc.png";
 import hero_back from "./assets/hero_back.png";
 import hero_img from "./assets/hero_img.png";
+import villa_img from "./assets/villa_img.png";
 
 export default function App() {
   return (
@@ -60,6 +61,27 @@ export default function App() {
                 gardens. Every detail is designed to create a balanced
                 lifestyle, merging comfort and opulence.
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="homepage__villa">
+          <div className="homepage__villa__info">
+            <div className="homepage__villa__info__left">
+              <div className="homepage__villa__info__left__heading">
+                Find the Villa That Fits Your Lifestyle
+              </div>
+              <div className="homepage__villa__info__left__subheading">
+                Choose from various villa options with spacious layouts across
+                multiple floors, including basements and upper levels. Each
+                villa features elegant bedrooms, modern kitchens, and relaxing
+                outdoor spaces for the perfect retreat.
+              </div>
+              <button className="homepage__villa__info__left__btn">
+                Contact Us
+              </button>
+            </div>
+            <div className="homepage__villa__info__right">
+              <img src={villa_img} alt="villa" />
             </div>
           </div>
         </div>
