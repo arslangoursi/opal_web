@@ -200,15 +200,60 @@
 .homepage__villa__info__right img {
   width: 100%;
 }
+.homepage__book {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 6em 0;
+  justify-content: center;
+  align-items: center;
+}
+.homepage__book_text {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  text-align: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 0 2em;
+}
+.homepage__book_text__heading {
+  display: flex;
+  font-size: 54px;
+  font-family: BeausiteFit-Light, sans-serif;
+  color: #0d1f35;
+  justify-content: center;
+}
+.homepage__book_text__subheading {
+  display: flex;
+  color: #0d1f35;
+  justify-content: center;
+}
+.homepage__book_img {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
 /* ------------------------------------------------------------------------------- */
 @media (width < 1500px) {
   .homepage__hero {
     height: 100%;
   }
+  .homepage__book_img {
+    top: 130px;
+  }
 }
+
 @media (width < 1250px) {
   .homepage__hero {
     height: 85vh;
+  }
+  .homepage__book_img {
+    top: 170px;
+  }
+  .homepage__book_text__subheading {
+    max-width: 600px;
   }
 }
 @media (width < 1100px) {
@@ -243,10 +288,17 @@
   .homepage__villa__info__right {
     width: 80%;
   }
+  .homepage__book_img {
+    top: 250px;
+  }
 }
 @media (width < 800px) {
+  .homepage__hero__info__wraper {
+    position: relative;
+    top: 0;
+  }
   .homepage__hero {
-    height: 100vh;
+    height: 100%;
   }
   .homepage__hero__img {
     left: 10%;
@@ -260,5 +312,9 @@
   }
   .homepage__villa__info {
     padding: 4em 1.5em 3em 1.5em;
+  }
+  .homepage__book_img {
+    position: relative;
+    top: 0;
   }
 }
