@@ -1,18 +1,18 @@
-import "@/app/style.scss";
+import "../app/style.scss";
+import "../app/header.scss";
+import "../app/footer.scss";
 
-// import aminity__back from "./assets/aminity__back.png";
-// import amnity_img from "./assets/amnity_img.png";
-// import book_img from "./assets/book_img.png";
-// import hero_arc from "./assets/hero_arc.png";
-// import hero_back from "./assets/hero_back.png";
-// import hero_img from "./assets/hero_img.png";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <>
       <div className="homepage">
         <div className="homepage__hero">
-          <div className="homepage__hero__header">Header</div>
+          <div className="homepage__hero__header">
+            <Header />
+          </div>
           <div className="homepage__hero__info">
             <div className="homepage__hero__info__wraper">
               <div className="homepage__hero__info__text">
@@ -22,7 +22,7 @@ export default function App() {
                 <img
                   className="homepage__hero__info__text__img"
                   alt="hero_arc"
-                  src=""
+                  src="/hero_arc.png"
                 />
                 <div className="homepage__hero__info__text__description">
                   Opal Residential Villas, located in Riyadh Al Malqa district,
@@ -104,6 +104,7 @@ export default function App() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
