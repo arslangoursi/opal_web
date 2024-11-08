@@ -10,7 +10,7 @@
   padding: 2em;
   color: #fff;
   font-family: BeausiteFit, sans-serif;
-  margin-top: 730px;
+  margin-top: 850px;
 }
 .footer__content__header {
   display: flex;
@@ -108,6 +108,7 @@
 @media (max-width: 1400px) {
   .footer__content__get__heading {
     font-size: 90px !important;
+    text-align: center;
   }
 }
 @media (max-width: 1350px) {

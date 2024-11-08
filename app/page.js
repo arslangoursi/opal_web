@@ -41,7 +41,9 @@ export default function App() {
               alt="hero Image"
             />
           </div>
-          <img src="/hero_back.png" className="homepage__hero__img" />
+          <div>
+            <img src="/hero_back.png" className="homepage__hero__img" />
+          </div>
         </div>
         <div className="homepage__amenities">
           <img src="/aminity__back.png" className="homepage__amenities__img" />
