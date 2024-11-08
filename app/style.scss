@@ -21,6 +21,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "shaheenproArabic-Light-cypwbi";
+  src: url("./fonts/shaheenproArabic-Light-cypwbi.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 #root {
   margin: 0 auto;
@@ -305,7 +311,6 @@ body {
     display: none;
   }
   .homepage__amenities__info__right {
-    text-align: center;
     width: 100%;
     padding-left: 0;
   }
@@ -315,7 +320,7 @@ body {
   }
   .homepage__villa__info__left {
     width: 100%;
-    text-align: center;
+
     justify-content: center;
     align-items: center;
   }
