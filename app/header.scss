@@ -6,8 +6,6 @@
   padding: 0.5em 2em;
   margin: 1em auto 0;
   max-width: 1440px;
-
-  width: 100%;
 }
 .header__other {
   display: flex;
@@ -22,26 +20,7 @@
   border-bottom: #e6e6e6 2px solid;
   border-top: #e6e6e6 2px solid;
 }
-.header__login__button {
-  background: var(
-    --Accent-gold-hover,
-    linear-gradient(87deg, #98540a 5.91%, #9d6323 42.63%, #ffb73c 91.82%)
-  );
-  border: none;
-  border-radius: 10px;
-  padding: 0.5em 2em;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  height: 52px;
-  max-width: 300px;
-}
-.header__login__button:hover {
-  background: var(
-    --Accent-gold-hover,
-    linear-gradient(87deg, #ffb73c 5.91%, #9d6323 42.63%, #98540a 91.82%)
-  );
-}
+
 .header__about {
   display: flex;
   justify-content: space-between;
@@ -66,7 +45,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 2em;
-  width: 40%;
+
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   visibility: hidden;
@@ -86,7 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 40%;
+  // width: 40%;
 }
 .black {
   color: #000 !important;
@@ -144,7 +123,7 @@
 }
 .header__main {
   position: absolute;
-  z-index: 9;
+  z-index: 99999;
   width: 100%;
 }
 [lang="ar"] {
@@ -175,7 +154,7 @@
 }
 .header__language__entry {
   padding: 0.3em 0.7em;
-  width: 35px;
+  // width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,7 +199,7 @@
   gap: 1em;
 }
 .header__actions__menu {
-  background-color: #3d3d3d;
+  background-color: #7698b1;
   border: none;
   border-radius: 10px;
   display: none;
@@ -245,7 +224,7 @@
     background-color: #3d3d3d;
   }
   .header__nav {
-    background-color: #3d3d3d;
+    background-color: #7698b1;
     border-radius: 10px;
     padding: 0.5em;
     gap: 0;
@@ -266,6 +245,7 @@
     transform: translate(0, 0);
     transform: scale(1);
     transform-origin: top right;
+    width: 200px;
   }
   .header__nav__item__other {
     color: #fff;
@@ -283,5 +263,8 @@
   }
   .header__logo {
     width: 130px;
+  }
+  .header__nav__item:hover {
+    color: #0d1f35;
   }
 }
