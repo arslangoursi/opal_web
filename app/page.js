@@ -1,12 +1,11 @@
-import "./app.css";
+import "@/app/style.scss";
 
-import aminity__back from "./assets/aminity__back.png";
-import amnity_img from "./assets/amnity_img.png";
-import book_img from "./assets/book_img.png";
-import hero_arc from "./assets/hero_arc.png";
-import hero_back from "./assets/hero_back.png";
-import hero_img from "./assets/hero_img.png";
-import villa_img from "./assets/villa_img.png";
+// import aminity__back from "./assets/aminity__back.png";
+// import amnity_img from "./assets/amnity_img.png";
+// import book_img from "./assets/book_img.png";
+// import hero_arc from "./assets/hero_arc.png";
+// import hero_back from "./assets/hero_back.png";
+// import hero_img from "./assets/hero_img.png";
 
 export default function App() {
   return (
@@ -23,7 +22,7 @@ export default function App() {
                 <img
                   className="homepage__hero__info__text__img"
                   alt="hero_arc"
-                  src={hero_arc}
+                  src=""
                 />
                 <div className="homepage__hero__info__text__description">
                   Opal Residential Villas, located in Riyadh Al Malqa district,
@@ -38,17 +37,17 @@ export default function App() {
             </div>
             <img
               className="homepage__hero__info__img"
-              src={hero_img}
+              src="/hero_img.png"
               alt="hero Image"
             />
           </div>
-          <img src={hero_back} className="homepage__hero__img" />
+          <img src="/hero_back.png" className="homepage__hero__img" />
         </div>
         <div className="homepage__amenities">
-          <img src={aminity__back} className="homepage__amenities__img" />
+          <img src="/aminity__back.png" className="homepage__amenities__img" />
           <div className="homepage__amenities__info">
             <div className="homepage__amenities__info__left">
-              <img src={amnity_img} />
+              <img alt="image" src="/amnity_img.png" />
             </div>
             <div className="homepage__amenities__info__right">
               <div className="homepage__amenities__info__right__heading">
@@ -82,7 +81,7 @@ export default function App() {
               </button>
             </div>
             <div className="homepage__villa__info__right">
-              <img src={villa_img} alt="villa" />
+              <img src="/villa_img.png" alt="villa" />
             </div>
           </div>
         </div>
@@ -100,7 +99,7 @@ export default function App() {
           </div>
           <img
             className="homepage__book_img"
-            src={book_img}
+            src="/book_img.png"
             alt="booking__Image"
           />
         </div>
