@@ -3,7 +3,8 @@
 import "../app/style.scss";
 import "../app/header.scss";
 import "../app/footer.scss";
-
+import Aos from "aos";
+import { useEffect } from "react";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { useLayoutEffect, useState } from "react";
 
@@ -13,6 +14,13 @@ import { usePathname } from "next/navigation";
 export default function App() {
   const [language, setLanguage] = useState("en");
   const [menuOpen, setMenuOpen] = useState(true);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   function checkNavOpenClose() {
     if (window.innerWidth < 768) {
@@ -142,7 +150,9 @@ export default function App() {
                   style={{ textAlign: language === "ar" ? "right" : "left" }}
                 >
                   <div
-                    className="homepage__hero__info__text__heading"
+                    className="homepage__hero__info__text__heading "data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
                     style={{
                       fontFamily:
                         language === "ar"
@@ -154,8 +164,11 @@ export default function App() {
                       ? "استمتع بتجربة فاخرة لا مثيل لها في فلل أوبال السكنية"
                       : "Experience Unmatched Luxury at Opal Residential Villas"}
                   </div>
-                  <Zoom direction="in">
+                  <Zoom direction="in" >
                     <img
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1200"
                       className="homepage__hero__info__text__img"
                       alt="hero_arc"
                       src="/hero_arc.png"
@@ -163,6 +176,9 @@ export default function App() {
                   </Zoom>
                   <div
                     className="homepage__hero__info__text__description"
+                    data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1400"
                     style={{
                       fontFamily:
                         language === "ar"
@@ -175,6 +191,9 @@ export default function App() {
                       : "Opal Residential Villas, located in Riyadh Al Malqa district, offers luxurious, uniquely designed villas that redefine elegance and comfort. Experience exclusive living with top-tier amenities for an unparalleled lifestyle"}
                   </div>
                   <a
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1500"
                     className="homepage__hero__info__text__btn"
                     href="#section4"
                   >
@@ -184,6 +203,9 @@ export default function App() {
               </Fade>
             </div>
             <img
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1600"
               className="homepage__hero__info__img"
               src="/hero_img.png"
               alt="hero Image"
@@ -198,7 +220,9 @@ export default function App() {
           <img src="/aminity__back.png" className="homepage__amenities__img" />
 
           <div className="homepage__amenities__info">
-            <div className="homepage__amenities__info__left">
+            <div className="homepage__amenities__info__left"data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000">
               <img alt="image" src="/amnity_img.png" />
             </div>
 
@@ -207,7 +231,9 @@ export default function App() {
               style={{ textAlign: language === "ar" ? "right" : "left" }}
             >
               <Fade direction="up">
-                <div
+                <div data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
                   className="homepage__amenities__info__right__heading"
                   style={{
                     justifyContent:
@@ -223,6 +249,9 @@ export default function App() {
                     : "Unrivaled Amenities for Every Lifestyle"}
                 </div>
                 <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1200"
                   className="homepage__amenities__info__right__text"
                   style={{
                     fontFamily:
@@ -252,7 +281,10 @@ export default function App() {
               }}
             >
               <Fade direction="up">
-                <div
+                <div 
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1000"
                   className="homepage__villa__info__left__heading"
                   style={{
                     fontFamily:
@@ -266,6 +298,9 @@ export default function App() {
                     : "Find the Villa That Fits Your Lifestyle"}
                 </div>
                 <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1200"
                   className="homepage__villa__info__left__subheading"
                   style={{
                     fontFamily:
@@ -280,6 +315,9 @@ export default function App() {
                 </div>
 
                 <a
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1400"
                   target="_blank"
                   href="https://drive.google.com/file/d/116hd--g6DBFX1XAvRQqPDoTfydtyeGUV/view?usp=drive_link"
                   className="homepage__villa__info__left__btn"
@@ -288,7 +326,9 @@ export default function App() {
                 </a>
               </Fade>
             </div>
-            <div className="homepage__villa__info__right">
+            <div className="homepage__villa__info__right"data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000">
               <img src="/villa_img.png" alt="villa" />
             </div>
           </div>
@@ -297,7 +337,10 @@ export default function App() {
         <div className="homepage__book" id="section3">
           <div className="homepage__book_text">
             <Fade direction="up">
-              <div
+              <div 
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
                 className="homepage__book_text__heading"
                 style={{
                   fontFamily:
@@ -311,6 +354,9 @@ export default function App() {
                   : "  Book Your Villa Today"}
               </div>
               <div
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1200"
                 className="homepage__book_text__subheading"
                 style={{
                   fontFamily:
@@ -327,6 +373,10 @@ export default function App() {
           </div>
           <img
             className="homepage__book_img"
+
+            data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1500"
             src="/book_img.png"
             alt="booking__Image"
           />
@@ -387,6 +437,9 @@ export default function App() {
 
           <div className="footer__content__get">
             <div
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
               className="footer__content__get__heading"
               style={{
                 fontFamily:
