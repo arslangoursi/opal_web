@@ -13,10 +13,10 @@
     "@emotion/react": "^11.14.0",
     "aos": "^2.3.4",
     "next": "15.5.6",
-    "react": "19.3.0-canary-fb2177c1-20251114",
+    "react": "19.3.0-canary-fd524fe0-20251121",
     "react-awesome-reveal": "^4.3.1",
-    "react-dom": "19.3.0-canary-fb2177c1-20251114",
-    "sass": "^1.94.1",
+    "react-dom": "19.3.0-canary-fd524fe0-20251121",
+    "sass": "^1.94.2",
     "sass-loader": "13.3.3"
   },
   "devDependencies": {
