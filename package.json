@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev --turbopack",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "format": "npx prettier --write .",
     "lint": "next lint"
   },
@@ -16,7 +16,7 @@
     "react": "19.3.0-canary-fd524fe0-20251121",
     "react-awesome-reveal": "^4.3.1",
     "react-dom": "19.3.0-canary-fd524fe0-20251121",
-    "sass": "^1.96.0",
+    "sass": "^1.97.0",
     "sass-loader": "13.3.3"
   },
   "devDependencies": {
